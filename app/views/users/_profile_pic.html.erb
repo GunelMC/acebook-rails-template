@@ -1,0 +1,9 @@
+<%= content_tag "div" do %>
+  <% if @users.find_by(id: post.user_id).avatar.attached? %>
+      <%= image_tag(@users.find_by(id: post.user_id).avatar, width: 80) %>
+  <% else %>
+      <%= gravatar_for @users.find_by(id: post.user_id) %>
+  <% end %>
+<% end %>
+
+
