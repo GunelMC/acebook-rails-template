@@ -22,7 +22,7 @@
 
 .byebug_history
 
-
+coverage/*
 storage/*
 
 /config/master.key
